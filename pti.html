@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Web - Kelompok 1</title>
+    <style>
+        /* 1. Pengaturan Dasar Dark Mode */
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #121212; 
+            color: #e0e0e0; 
+        }
+
+        header, footer {
+            background-color: #1f1f1f;
+            color: #bb86fc; 
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 2px solid #333;
+        }
+
+        footer {
+            border-top: 2px solid #333;
+            margin-top: 30px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 25px;
+            background-color: #1e1e1e; 
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+
+        section {
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #333;
+        }
+
+        h2, h3 {
+            color: #bb86fc;
+            border-left: 5px solid #03dac6; 
+            padding-left: 15px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background-color: #252525;
+        }
+
+        table th, table td {
+            border: 1px solid #333;
+            padding: 12px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #bb86fc;
+            color: #121212; 
+        }
+
+        table tr:nth-child(even) {
+            background-color: #2c2c2c; 
+        }
+
+        .media-box video {
+            width: 100%;
+            border: 1px solid #333;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #03dac6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #bb86fc;
+            text-decoration: underline;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Tugas Website Kelompok 1</h1>
+        <p>Mata Kuliah Pengantar Teknologi Informasi</p>
+    </header>
+
+    <div class="container">
+        <section class="identitas">
+            <h2>Identitas Kelompok</h2>
+            <ul>
+                <li><strong>Kelompok 1</strong></li>
+                <li><strong>Prodi:</strong> Teknologi Informasi</li>
+                <li><strong>Fakultas:</strong> Teknik dan Ilmu Komputer</li>
+            </ul>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nama Anggota</th>
+                        <th>NIM</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Muhammad Zaid Abdullah</td>
+                        <td>13242520030</td>
+                    </tr>
+                    <tr>
+                        <td>Indra Nur Wahyu Saputra</td>
+                        <td>13242520026</td>
+                    </tr>
+                    <tr>
+                        <td>Andhika Bagus Setiawan</td>
+                        <td>13242520023</td>
+                    </tr>
+                    <tr>
+                        <td>Faizal Muhammad</td>
+                        <td>13242520020</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="Tugas-PTI">
+            <h2>Cara Mengecek Device hp Iphone Garansi Resmi dan Non Resmi</h2>
+            <p>Website ini dibuat untuk mengedukasi dengan singkat
+                bagaimana cara mengecek device iphone yang Bergaransi Resmi Indonesia
+                (ID/A, PA/A, SA/A) ataupun non garansi resmi Indonesia (LL/A, ZP/A, CH/A, dll..),
+                Dan basic pengecekan pada unit tersebut.</p>
+
+            <h3>Langkah-Langkahnya Sebagai Berikut</h3>
+            <ol>
+                <li>Buka aplikasi Pengaturan (Settings) pada iPhone Anda.</li>
+                <li>Gulir ke bawah dan ketuk "Umum" (General).</li>
+                <li>Pilih "Tentang" (About).</li>
+                <li>Lihat pada tulisan Nomor Model tepatnya pada dibagian atas nomor seri pada device anda</li>
+                <li>Jika iPhone Anda memiliki garansi resmi Indonesia, akan tertulis "Garansi Resmi Indonesia" beserta tanggal berakhirnya garansi.</li>
+                <li>Perhatikan pada 3 huruf terakhir dari kode model tersebut:</li>
+            </ol>
+            <ul>
+                <li>ID/A, PA/A, SA/A: Garansi Resmi Indonesia</li>
+                <li>LL/A, ZP/A, CH/A, dll.: Non Garansi Resmi Indonesia</li>
+            </ul>
+        </section>
+            
+        <section class="media-box">
+            <h3>Video tutorialnya</h3>
+            <video controls>
+                <source src="IMG_1112.MP4" type="video/mp4">
+            </video>
+
+            <h3>Video macam-macam kode berbagai region</h3>
+            <video controls>
+                <source src="IMG_1111.MP4" type="video/mp4">
+            </video>
+        </section>
+
+        <section class="media-box">
+            <h3>Video Tutorial dari (YouTube)</h3>
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/I9KK1txrhKk" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <p><a href="https://www.youtube.com/embed/I9KK1txrhKk" target="_blank">Lihat di YouTube</a></p>
+        </section>
+
+        <section class="kode-unit">
+            <h2>Cara Mengecek Device hp Iphone Termasuk dalam Unit apa?</h2>
+            <p>Perlu kita ketahui bahwa kita bisa mengecek sebenarnya Iphone yang kita pake ini Termasuk Unit apa?
+                Apakah itu Unit Rekondisi, Unit Refurbished, ataukah Unit Baru (New).
+                Caranya cukup mudah, kita hanya perlu mengecek pada bagian Nomor Model (Model Number) pada iPhone kita.</p>
+
+            <h3>Berikut adalah cara mengeceknya:</h3>
+            <ol>
+                <li>Buka aplikasi Pengaturan (Settings) pada iPhone Anda.</li>
+                <li>Gulir ke bawah dan ketuk "Umum" (General).</li>
+                <li>Pilih "Tentang" (About).</li>
+                <li>Lihat pada tulisan Nomor Model tepatnya pada dibagian atas nomor seri pada device anda</li>
+                <li>Perhatikan pada huruf pertama dari kode model tersebut:</li>
+            </ol>
+            <ul>
+                <li>M: Unit Baru (New)</li>
+                <li>F: Unit Refurbished (Diperbarui oleh Apple)</li>
+                <li>N: Unit Pengganti (Replacement Unit)</li>
+            </ul>
+            <p>Dari penjelasan kode-kode tersebut artinya kita bisa dengan mudah mengetahui 
+                asal-usul Unit iPhone yang kita gunakan apakah itu Unit Baru, Unit Refurbished, 
+                ataukah Unit Pengganti.</p>
+        </section>
+           
+        <section class="media-box">
+            <h3>Video tutorialnya</h3>
+            <video controls>
+                <source src="IMG_1113.MP4" type="video/mp4">
+            </video>
+
+            <h3>Video macam-macam kode pada Unit</h3>
+            <video controls>
+                <source src="IMG_1115.MP4" type="video/mp4">
+            </video>
+        </section>
+
+        <section class="media-box">
+            <h3>Video Tutorial dari (YouTube)</h3>
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/4SyCL5Vhfuk?si=FKl1tQhxDmjEhKNn" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <p><a href="https://www.youtube.com/embed/4SyCL5Vhfuk?si=FKl1tQhxDmjEhKNn" target="_blank">Lihat di YouTube</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Kelompok 1. Mohon Maaf jika ada kesalahan pada Web ini.</p>
+    </footer>
+
+</body>
+</html>
